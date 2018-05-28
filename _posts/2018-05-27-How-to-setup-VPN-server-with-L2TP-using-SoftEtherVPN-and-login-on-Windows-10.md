@@ -19,7 +19,7 @@ SoftEtherVPN으로 SSTP VPN server를 구축해본다.
 무릇 새로운 소프트웨어를 설치하려면, upgrade는 필수다.
 그리고 설치에 필요한 package인 `build-essential` 를 다운받는다.
 
-``` cmd
+```
 ubuntu@host:~$ sudo apt-get update && apt-get upgrade
 ubuntu@host:~$ sudo apt-get install build-essential -y
 ```
@@ -30,41 +30,41 @@ SoftEther 다운로드페이지로 접속하여 설치 파일을 다운받아야
 wget이나 curl로 받아도 되지만 여기서는 lynx를 사용하여 서버에서 직접 웹페이지로 접속하여 다운받는 방법을 설명한다.
 lynx는 terminal 환경에서 웹페이지에 접속하는 도구다.
 
-``` cmd
+```
 ubuntu@host:~$ sudo apt-get install lynx -y
 ```
 
 lynx로 softether 다운로드 사이트에 접속한다.
 
-``` cmd
+```
 ubuntu@host:~$ lynx http://www.softether-download.com/files/softether/
 ```
 
 접속하면 아래와 같은 그림이 나타난다.
 
-![lynx01](/imgs/180527/lynx01.JPG)
+![lynx01](180527/lynx01.jpg)
 
 맨 위는 가장 옛날, 맨 아래가 가장 최신(latest)다. 
 따라서 가장 아래의 버전으로 ↓ 화살표 키보드를 눌러 내려간 후 엔터를 쳐서 고른다.
 
-![lynx02](/imgs/180527/lynx02.JPG)
+![lynx02](180527/lynx02.jpg)
 
 우리는 linux 에서 작업하고 있이므로 linux를 고른다.
 
-![lynx03](/imgs/180527/lynx03.JPG)
+![lynx03](180527/lynx03.jpg)
 
 VPN server를 구축하니까 server 선택.
 
-![lynx04](/imgs/180527/lynx04.JPG)
+![lynx04](180527/lynx04.jpg)
 
 64bit 를 선택한다.
 
-![lynx05](/imgs/180527/lynx05.JPG)
+![lynx05](180527/lynx05.jpg)
 
 초보 서버개발자는 lynx를 처음 써서 다운로드받는 방법을 모를 수 있다.
 다운로드하려는 항목에 커서를 옮긴 후 'D'를 누르면 다운받아진다.
 
-![lync06](/imgs/180527/lynx06.JPG)
+![lync06](180527/lynx06.jpg)
 
 경로를 묻는데, 그냥 엔터 치면 Home으로 다운받는다.
 
@@ -76,20 +76,20 @@ vpn 서버는 root 계정으로 실행해야 한다.
 하지만 우리는 일반 sudo 사용자로 실행해왔다.
 따라서 root 계정으로 변경한다.
 
-``` cmd
+```
 ubuntu@host:~$ sudo su
 ```
 
 다운받은 폴더의 압축을 푼다.
 
-``` cmd
+```
 root@host:/etc/vpnserver# tar xzvf softether-vpnserver-v4.27-9667-beta-2018.05.26-linux-x64-64bit.tar.gz
 ```
 
 압축을 풀면 `vpnserver`라는 폴더가 생긴다.
 이 폴더를 `/etc` 로 옮긴다.
 
-``` cmd
+```
 root@host:/etc/vpnserver# mv vpnserver /etc
 ```
 
@@ -427,17 +427,17 @@ VPN Server/VPN>
 '설정'-'네트워크'-'VPN'으로 접근한다.
 'VPN 연결 추가'를 선택한다.
 
-![win10vpn](/imgs/180527/win10vpn.JPG)
+![win10vpn](180527/win10vpn.jpg)
 
 이름을 적당히 입력한다.
 서버 주소(대게 IP)와 사전 공유 키를 입력한다.
 그리고 서버에서 설정한 아이디와 비밀번호를 입력한다.
 
-![vpnprofile](/imgs/180527/vpnprofile.JPG)
+![vpnprofile](180527/vpnprofile.jpg)
 
 그리고 접속한다.
 
-![vpnlogin](/imgs/180527/vpnlogin.JPG)
+![vpnlogin](180527/vpnlogin.jpg)
 
 ## References
 
