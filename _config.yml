@@ -9,13 +9,13 @@ google_analytics: "UA-96533362-1"
 # User Settings
 username: Luvix Basso
 user_description: System&Network Engineer, Arduino Engineer, Devops Engineer, Machine Learning Scientest
-disqus_username: theodore-kim
+# disqus_username: theodore-kim
 
 # Social Media
 # Remove the item if you don't need it
 github_username: luvix
-facebook_username: theodore.leesuk.kim
 twitter_username: LuvixBasso
+# facebook_username: 
 # instagram_username: 
 # linkedin_username: leesukkim
 # medium_username: medium_username
