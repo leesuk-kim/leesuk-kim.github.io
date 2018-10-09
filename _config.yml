@@ -1,23 +1,23 @@
 # Site Settings
 title: Hybrid System Engineer
-email: theodore@nextwe.xyz
+email: luvix@nextwe.xyz
 description: Portfolio and blog of Theodore.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://leesuk-kim.github.io" # the base hostname & protocol for your site
+url: "https://luvix.github.io" # the base hostname & protocol for your site
 google_analytics: "UA-96533362-1"
 
 # User Settings
-username: Leesuk Kim (Theodore)
+username: Luvix Basso
 user_description: System&Network Engineer, Arduino Engineer, Devops Engineer, Machine Learning Scientest
 disqus_username: theodore-kim
 
 # Social Media
 # Remove the item if you don't need it
-github_username: leesuk-kim
+github_username: luvix
 facebook_username: theodore.leesuk.kim
-twitter_username: thdr_lees
-instagram_username: thdr_lees
-linkedin_username: leesukkim
+twitter_username: LuvixBasso
+# instagram_username: 
+# linkedin_username: leesukkim
 # medium_username: medium_username
 
 # Build settings
