@@ -17,7 +17,7 @@ stable 버전의 rvm을 설치한다.
 curl 앞에 backslach가 있는데, 빼먹지 않도록 주의한다. 버전 충돌을 막아준다.
 
 ```
-theo@Bash-On-Windows:/mnt/c/Users/theodore$ \curl -L https://get.rvm.io | bash -s stable --ruby
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$ \curl -L https://get.rvm.io | bash -s stable --ruby
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   194  100   194    0     0    179      0  0:00:01  0:00:01 --:--:--   179
@@ -27,15 +27,15 @@ Downloading https://github.com/rvm/rvm/releases/download/1.29.1/1.29.1.tar.gz.as
 Found PGP signature at: 'https://github.com/rvm/rvm/releases/download/1.29.1/1.29.1.tar.gz.asc',
 but no GPG software exists to validate it, skipping.
 
-Installing RVM to /home/theo/.rvm/
-    Adding rvm PATH line to /home/theo/.profile /home/theo/.mkshrc /home/theo/.bashrc /home/theo/.zshrc.
-    Adding rvm loading line to /home/theo/.profile /home/theo/.bash_profile /home/theo/.zlogin.
-Installation of RVM in /home/theo/.rvm/ is almost complete:
+Installing RVM to /home/luvix/.rvm/
+    Adding rvm PATH line to /home/luvix/.profile /home/luvix/.mkshrc /home/luvix/.bashrc /home/luvix/.zshrc.
+    Adding rvm loading line to /home/luvix/.profile /home/luvix/.bash_profile /home/luvix/.zlogin.
+Installation of RVM in /home/luvix/.rvm/ is almost complete:
 
-  * To start using RVM you need to run `source /home/theo/.rvm/scripts/rvm`
+  * To start using RVM you need to run `source /home/luvix/.rvm/scripts/rvm`
     in all your open shell windows, in rare cases you need to reopen all shell windows.
 
-# theo,
+# luvix,
 #
 #   Thank you for using RVM!
 #   We sincerely hope that RVM helps to make your life easier and more enjoyable!!!
@@ -48,10 +48,10 @@ Searching for binary rubies, this might take some time.
 Found remote file https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.4.0.tar.bz2
 Checking requirements for ubuntu.
 Installing requirements for ubuntu.
-Updating systemtheo password required for 'apt-get --quiet --yes update': ..\
+Updating systemluvix password required for 'apt-get --quiet --yes update': ..\
 ......
-eInstalling required packages: g++, gcc, libssl-dev, make, libc6-dev, zlib1g-dev, libyaml-dev, libsqlite3-dev, sqlite3, autoconf, libgmp-dev, libgdbm-dev, libncurses5-dev, automake, libtool, bison, pkg-config, libffi-dev, libgmp-dev, libreadline6-devtheo password required for 'apt-get --no-install-recommends --yes install g++ gcc libssl-dev make libc6-dev zlib1g-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgmp-dev libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libgmp-dev libreadline6-dev': ..\
-theo password required for 'apt-get --no-install-recommends --yes install g++ gcc libssl-dev make libc6-dev zlib1g-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgmp-dev libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libgmp-dev libreadline6-dev':
+eInstalling required packages: g++, gcc, libssl-dev, make, libc6-dev, zlib1g-dev, libyaml-dev, libsqlite3-dev, sqlite3, autoconf, libgmp-dev, libgdbm-dev, libncurses5-dev, automake, libtool, bison, pkg-config, libffi-dev, libgmp-dev, libreadline6-devluvix password required for 'apt-get --no-install-recommends --yes install g++ gcc libssl-dev make libc6-dev zlib1g-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgmp-dev libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libgmp-dev libreadline6-dev': ..\
+luvix password required for 'apt-get --no-install-recommends --yes install g++ gcc libssl-dev make libc6-dev zlib1g-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgmp-dev libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libgmp-dev libreadline6-dev':
 ..................................................
 Requirements installation successful.
 ruby-2.4.0 - #configure
@@ -65,17 +65,17 @@ ruby-2.4.0 - #validate archive
 ruby-2.4.0 - #extract
 ruby-2.4.0 - #validate binary
 ruby-2.4.0 - #setup
-ruby-2.4.0 - #gemset created /home/theo/.rvm/gems/ruby-2.4.0@global
-ruby-2.4.0 - #importing gemset /home/theo/.rvm/gemsets/global.gems
+ruby-2.4.0 - #gemset created /home/luvix/.rvm/gems/ruby-2.4.0@global
+ruby-2.4.0 - #importing gemset /home/luvix/.rvm/gemsets/global.gems
 ruby-2.4.0 - #generating global wrappers........
-ruby-2.4.0 - #gemset created /home/theo/.rvm/gems/ruby-2.4.0
-ruby-2.4.0 - #importing gemsetfile /home/theo/.rvm/gemsets/default.gems evaluated to empty gem list
+ruby-2.4.0 - #gemset created /home/luvix/.rvm/gems/ruby-2.4.0
+ruby-2.4.0 - #importing gemsetfile /home/luvix/.rvm/gemsets/default.gems evaluated to empty gem list
 ruby-2.4.0 - #generating default wrappers........
 Creating alias default for ruby-2.4.0...
 
-  * To start using RVM you need to run `source /home/theo/.rvm/scripts/rvm`
+  * To start using RVM you need to run `source /home/luvix/.rvm/scripts/rvm`
     in all your open shell windows, in rare cases you need to reopen all shell windows.
-theo@Bash-On-Windows:/mnt/c/Users/theodore$
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 ```
 
 ### rvm 적용
@@ -83,11 +83,11 @@ theo@Bash-On-Windows:/mnt/c/Users/theodore$
 rvm을 bash에 등록시킨다. 등록하지 않으면 rvm 명령을 실행할 수 없다.
 
 ```
-theo@Bash-On-Windows:/mnt/c/Users/theodore$ rvm install ruby-2.4.1
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$ rvm install ruby-2.4.1
 'rvm' 명령은 찾을 수 없지만 비슷한  '20' 명령이 있습니다.
 rvm: 명령을 찾을 수 없습니다
-theo@Bash-On-Windows:/mnt/c/Users/theodore$ source /home/theo/.rvm/scripts/rvm
-theo@Bash-On-Windows:/mnt/c/Users/theodore$
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$ source /home/luvix/.rvm/scripts/rvm
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 ```
 
 ### ruby 2.4.1 설치
@@ -95,7 +95,7 @@ theo@Bash-On-Windows:/mnt/c/Users/theodore$
 버전명을 주의한다.
 
 ```
-theo@Bash-On-Windows:/mnt/c/Users/theodore$ rvm install ruby-2.4.1
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$ rvm install ruby-2.4.1
 Searching for binary rubies, this might take some time.
 Found remote file https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.4.1.tar.bz2
 Checking requirements for ubuntu.
@@ -111,27 +111,27 @@ ruby-2.4.1 - #validate archive
 ruby-2.4.1 - #extract
 ruby-2.4.1 - #validate binary
 ruby-2.4.1 - #setup
-ruby-2.4.1 - #gemset created /home/theo/.rvm/gems/ruby-2.4.1@global
-ruby-2.4.1 - #importing gemset /home/theo/.rvm/gemsets/global.gems...................................
+ruby-2.4.1 - #gemset created /home/luvix/.rvm/gems/ruby-2.4.1@global
+ruby-2.4.1 - #importing gemset /home/luvix/.rvm/gemsets/global.gems...................................
 ruby-2.4.1 - #generating global wrappers........
-ruby-2.4.1 - #gemset created /home/theo/.rvm/gems/ruby-2.4.1
-ruby-2.4.1 - #importing gemsetfile /home/theo/.rvm/gemsets/default.gems evaluated to empty gem list
+ruby-2.4.1 - #gemset created /home/luvix/.rvm/gems/ruby-2.4.1
+ruby-2.4.1 - #importing gemsetfile /home/luvix/.rvm/gemsets/default.gems evaluated to empty gem list
 ruby-2.4.1 - #generating default wrappers........
-theo@Bash-On-Windows:/mnt/c/Users/theodore$
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 ```
 
 ### default ruby를 2.4.1로 변경
 
 ```
-theo@Bash-On-Windows:/mnt/c/Users/theodore$ rvm --default use ruby-2.4.1
-Using /home/theo/.rvm/gems/ruby-2.4.1
-theo@Bash-On-Windows:/mnt/c/Users/theodore$
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$ rvm --default use ruby-2.4.1
+Using /home/luvix/.rvm/gems/ruby-2.4.1
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 ```
 
 ### Jekyll 설치
 
 
-    theo@Bash-On-Windows:/mnt/c/Users/theodore$ gem install jekyll
+    luvix@Bash-On-Windows:/mnt/c/Users/luvix$ gem install jekyll
     Fetching: public_suffix-2.0.5.gem (100%)
     Successfully installed public_suffix-2.0.5
     Fetching: addressable-2.5.0.gem (100%)
@@ -146,7 +146,7 @@ theo@Bash-On-Windows:/mnt/c/Users/theodore$
     Successfully installed rb-fsevent-0.9.8
     Fetching: ffi-1.9.18.gem (100%)
     Building native extensions.  This could take a while...
-    /home/theo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/rubygems/ext/builder.rb:76: warning: Insecure world writable dir /home/theo/.rvm/gems/ruby-2.4.1/bin in PATH, mode 040777
+    /home/luvix/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/rubygems/ext/builder.rb:76: warning: Insecure world writable dir /home/luvix/.rvm/gems/ruby-2.4.1/bin in PATH, mode 040777
     Successfully installed ffi-1.9.18
     Fetching: rb-inotify-0.9.8.gem (100%)
     Successfully installed rb-inotify-0.9.8
@@ -208,7 +208,7 @@ theo@Bash-On-Windows:/mnt/c/Users/theodore$
     Installing ri documentation for jekyll-3.4.3
     Done installing documentation for public_suffix, addressable, colorator, sass, jekyll-sass-converter, rb-fsevent, ffi, rb-inotify, listen, jekyll-watch, kramdown, liquid, mercenary, forwardable-extended, pathutil, rouge, safe_yaml, jekyll after 34 seconds
     18 gems installed
-    theo@Bash-On-Windows:/mnt/c/Users/theodore$
+    luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 
 
 ### bundler 및 bundle 설치
@@ -216,7 +216,7 @@ theo@Bash-On-Windows:/mnt/c/Users/theodore$
 bundle을 설치할 때 bundler도 같이 설치된다.
 
 ```
-theo@Bash-On-Windows:/mnt/c/Users/theodore$ gem install bundle
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$ gem install bundle
 Fetching: bundler-1.14.6.gem (100%)
 Successfully installed bundler-1.14.6
 Fetching: bundle-0.0.1.gem (100%)
@@ -227,7 +227,7 @@ Parsing documentation for bundle-0.0.1
 Installing ri documentation for bundle-0.0.1
 Done installing documentation for bundler, bundle after 8 seconds
 2 gems installed
-theo@Bash-On-Windows:/mnt/c/Users/theodore$
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 ```
 
 ## Jekyll 프로젝트 설정
@@ -235,19 +235,19 @@ theo@Bash-On-Windows:/mnt/c/Users/theodore$
 먼저 jekyll 프로젝트가 있는 디렉토리로 이동한다.
 
 ```
-theo@Bash-On-Windows:/mnt/c/Users/theodore$ cd /mnt/c/theodore-kim.github.io/
-theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$
+luvix@Bash-On-Windows:/mnt/c/Users/luvix$ cd /mnt/c/luvix.github.io/
+luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
 ```
 
 ### Jekyll 프로젝트에 bundle설치
 
 ```
-theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ bundle install
+luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle install
 
 [!] There was an error parsing `Gemfile`:
 [!] There was an error while loading `forty_jekyll_theme.gemspec`: No such file or directory - git. Bundler cannot continue.
 
- #  from /mnt/c/theodore-kim.github.io/forty_jekyll_theme.gemspec:13
+ #  from /mnt/c/luvix.github.io/forty_jekyll_theme.gemspec:13
  #  -------------------------------------------
  #
  >    spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
@@ -255,12 +255,12 @@ theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ bundle install
  #  -------------------------------------------
 . Bundler cannot continue.
 
- #  from /mnt/c/theodore-kim.github.io/Gemfile:2
+ #  from /mnt/c/luvix.github.io/Gemfile:2
  #  -------------------------------------------
  #  source "https://rubygems.org"
  >  gemspec
  #  -------------------------------------------
- theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$
+ luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
 ```
 
 **주의!** git이 설치되어 있지 않다면 Git를 설치한다.
@@ -270,9 +270,9 @@ bundle이 Git 설정을 읽어야하기 때문이다.
 ### Git 설치
 
 
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ sudo apt-get install git
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ sudo apt-get install git
     sudo: unable to resolve host Bash-On-Windows
-    [sudo] password for theo:
+    [sudo] password for luvix:
     패키지 목록을 읽는 중입니다... 완료0%
     의존성 트리를 만드는 중입니다
     상태 정보를 읽는 중입니다... 완료
@@ -308,13 +308,13 @@ bundle이 Git 설정을 읽어야하기 때문이다.
     liberror-perl (0.17-1.1) 설정하는 중입니다 ...
     git-man (1:1.9.1-1ubuntu0.4) 설정하는 중입니다 ...
     git (1:1.9.1-1ubuntu0.4) 설정하는 중입니다 ...
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
 
 
 ### 다시 Jekyll 프로젝트에 bundle설치
 
 
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ bundle install
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle install
     Fetching gem metadata from https://rubygems.org/...........
     Fetching version metadata from https://rubygems.org/..
     Fetching dependency metadata from https://rubygems.org/.
@@ -340,24 +340,24 @@ bundle이 Git 설정을 읽어야하기 때문이다.
     Installing jekyll 3.4.2
     Bundle complete! 3 Gemfile dependencies, 20 gems now installed.
     Use `bundle show [gemname]` to see where a bundled gem is installed.
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
 
 
 ### Jekyll 테스트
 
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ bundle exec jekyll serve --detach
-    Configuration file: /mnt/c/theodore-kim.github.io/_config.yml
-    Configuration file: /mnt/c/theodore-kim.github.io/_config.yml
-                Source: /mnt/c/theodore-kim.github.io
-          Destination: /mnt/c/theodore-kim.github.io/_site
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle exec jekyll serve --detach
+    Configuration file: /mnt/c/luvix.github.io/_config.yml
+    Configuration file: /mnt/c/luvix.github.io/_config.yml
+                Source: /mnt/c/luvix.github.io
+          Destination: /mnt/c/luvix.github.io/_site
     Incremental build: disabled. Enable with --incremental
           Generating...
                         done in 1.524 seconds.
     Auto-regeneration: disabled when running server detached.
-    Configuration file: /mnt/c/theodore-kim.github.io/_config.yml
+    Configuration file: /mnt/c/luvix.github.io/_config.yml
         Server address: http://127.0.0.1:4000/
     Server detached with pid '9422'. Run `pkill -f jekyll' or `kill -9 9422' to stop the server.
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
 
 이로써 localhost에 포트 4000으로 jekyll에 접속할 수 있게되었다.
 
@@ -368,39 +368,39 @@ Bash on Windows의 버전이 낮을 경우 reload가 불가능할 수 있다.
 또한 Jekyll이 git 관련 에러를 출력하지만, 재실행에는 문제가 없다.
 
 
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ jekyll serve --watch
-    Configuration file: /mnt/c/theodore-kim.github.io/_config.yml
-    Configuration file: /mnt/c/theodore-kim.github.io/_config.yml
-                Source: /mnt/c/theodore-kim.github.io
-          Destination: /mnt/c/theodore-kim.github.io/_site
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ jekyll serve --watch
+    Configuration file: /mnt/c/luvix.github.io/_config.yml
+    Configuration file: /mnt/c/luvix.github.io/_config.yml
+                Source: /mnt/c/luvix.github.io
+          Destination: /mnt/c/luvix.github.io/_site
     Incremental build: disabled. Enable with --incremental
           Generating...
                         done in 0.623 seconds.
                         Auto-regeneration may not work on some Windows versions.
                         Please see: https://github.com/Microsoft/BashOnWindows/issues/216
                         If it does not work, please upgrade Bash on Windows or run Jekyll with --no-watch.
-    jekyll 3.4.2 | Error:  Invalid argument - Failed to watch "/mnt/c/theodore-kim.github.io/.git/hooks": the given event mask contains no legal events; or fd is not an inotify file descriptor.
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$
+    jekyll 3.4.2 | Error:  Invalid argument - Failed to watch "/mnt/c/luvix.github.io/.git/hooks": the given event mask contains no legal events; or fd is not an inotify file descriptor.
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
 
 
 ## 내일 다시 시작하기
 
 다시 시작할 때는 source 명령어로 rvm을 불러온 후 bundle과 jekyll 을 차례대로 실행하면 된다.
 
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ source /home/theo/.rvm/scripts/rvm
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ bundle exec jekyll serve --detach
-    Configuration file: /mnt/d/Documents/Codeworks/theodore/theodore-kim.github.io/_config.yml
-    Configuration file: /mnt/d/Documents/Codeworks/theodore/theodore-kim.github.io/_config.yml
-                Source: /mnt/d/Documents/Codeworks/theodore/theodore-kim.github.io
-          Destination: /mnt/d/Documents/Codeworks/theodore/theodore-kim.github.io/_site
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ source /home/luvix/.rvm/scripts/rvm
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle exec jekyll serve --detach
+    Configuration file: /mnt/d/Documents/Codeworks/luvix/luvix.github.io/_config.yml
+    Configuration file: /mnt/d/Documents/Codeworks/luvix/luvix.github.io/_config.yml
+                Source: /mnt/d/Documents/Codeworks/luvix/luvix.github.io
+          Destination: /mnt/d/Documents/Codeworks/luvix/luvix.github.io/_site
     Incremental build: disabled. Enable with --incremental
           Generating...
                         done in 0.634 seconds.
     Auto-regeneration: disabled when running server detached.
-    Configuration file: /mnt/d/Documents/Codeworks/theodore/theodore-kim.github.io/_config.yml
+    Configuration file: /mnt/d/Documents/Codeworks/luvix/luvix.github.io/_config.yml
         Server address: http://127.0.0.1:4000/
     Server detached with pid '99'. Run `pkill -f jekyll' or `kill -9 99' to stop the server.
-    theo@Bash-On-Windows:/mnt/c/theodore-kim.github.io$ [2017-03-31 22:42:48] ERROR `/favicon.ico' not found.
+    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ [2017-03-31 22:42:48] ERROR `/favicon.ico' not found.
 
 
 ## 정리
@@ -411,7 +411,7 @@ rvm을 이용하여 ruby를 설치한 후, jekyll과 필요한 패키지들을 �
 
 ``` 
 \curl -L https://get.rvm.io | bash -s stable --ruby
-source /home/theo/.rvm/scripts/rvm
+source /home/luvix/.rvm/scripts/rvm
 rvm install ruby-2.4.1
 rvm --default use ruby-2.4.1
 gem install jekyll
@@ -430,7 +430,7 @@ jekyll serve --watch
 다시 시작할 때 사용된 스크립트는 다음과 같다.
 
 ``` 
-source /home/theo/.rvm/scripts/rvm
+source /home/luvix/.rvm/scripts/rvm
 bundle exec jekyll serve --detach
 jekyll serve --watch
 ```
