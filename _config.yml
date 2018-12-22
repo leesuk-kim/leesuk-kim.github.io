@@ -1,5 +1,5 @@
 # Site Settings
-title: Hybrid System Engineer
+title: Luvix, The winged cat
 email: luvix.basso@gmail.com
 description: Portfolio and blog of Luvix Basso.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -8,7 +8,7 @@ google_analytics: "UA-96533362-1"
 
 # User Settings
 username: Luvix Basso
-user_description: 나무꾼같은 뉴스꾼
+user_description: 나무하듯 뉴스해오는 뉴스꾼
 # disqus_username: luvix
 
 # Social Media
