@@ -2,6 +2,7 @@
 layout: post
 title: Practice to install Jekyll on bash on Windows
 description: bash on Windows 에 Jekyll을 설치해본다.
+image: 'https://user-images.githubusercontent.com/16158188/50376968-90ef4780-0658-11e9-9bd1-32143dfddd90.jpg'
 category: "Development Environment"
 tags: [ssh, bash-on-windows]
 comments: true

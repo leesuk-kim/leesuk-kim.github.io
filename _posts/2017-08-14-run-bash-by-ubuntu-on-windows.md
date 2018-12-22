@@ -3,7 +3,6 @@ layout: post
 title: run Shell script by Windows Subsystem for Linux
 description: Windows에서 Windows Subsystem for Linux로 shell script를 실행한다.
 category: "linux"
-image: 'https://user-images.githubusercontent.com/16158188/50376968-90ef4780-0658-11e9-9bd1-32143dfddd90.jpg'
 tags: [linux, bash, WSL]
 comments: true
 ---
