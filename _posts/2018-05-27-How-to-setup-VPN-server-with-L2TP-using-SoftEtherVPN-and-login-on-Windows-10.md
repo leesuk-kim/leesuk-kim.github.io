@@ -348,7 +348,7 @@ VPN Server/VPN>
 Group Name, User Full Name, User Description은 빈칸으로 두고 엔터를 입력해도 된다.
 
 ```
-VPN Server/VPN>UserCreate theodore
+VPN Server/VPN>UserCreate luvix
 UserCreate command - Create User
 Assigned Group Name:
 
@@ -364,7 +364,7 @@ VPN Server/VPN>
 사용자 비밀번호를 등록한다.
 
 ```
-VPN Server/VPN>UserPasswordSet theodore
+VPN Server/VPN>UserPasswordSet luvix
 UserPasswordSet command - Set Password Authentication for User Auth Type and Set Password
 Please enter the password. To cancel press the Ctrl+D key.
 

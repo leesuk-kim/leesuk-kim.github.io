@@ -5,7 +5,7 @@ description: Some description.
 permalink: /about/
 ---
 
-<img itemprop="image" class="img-rounded" src="https://avatars1.githubusercontent.com/u/16158188" alt="Theodore">
+<img itemprop="image" class="img-rounded" src="https://avatars1.githubusercontent.com/u/16158188" alt="luvix">
 
 ## About
 

@@ -1,7 +1,7 @@
 # Site Settings
 title: Hybrid System Engineer
 email: luvix@nextwe.xyz
-description: Portfolio and blog of Theodore.
+description: Portfolio and blog of Luvix Basso.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://luvix.github.io" # the base hostname & protocol for your site
 google_analytics: "UA-96533362-1"
@@ -9,7 +9,7 @@ google_analytics: "UA-96533362-1"
 # User Settings
 username: Luvix Basso
 user_description: System&Network Engineer, Arduino Engineer, Devops Engineer, Machine Learning Scientest
-# disqus_username: theodore-kim
+# disqus_username: luvix
 
 # Social Media
 # Remove the item if you don't need it
