@@ -1,13 +1,13 @@
 ---
 layout: post
-title: run Shell script by Ubuntu on Windows
-description: Windows에서 Ubuntu on Windows의 bash로 shell script를 실행한다.
+title: run Shell script by Windows Subsystem for Linux
+description: Windows에서 Windows Subsystem for Linux로 shell script를 실행한다.
 category: "linux"
-tags: [linux, bash, bash-on-windows]
+tags: [linux, bash, WSL]
 comments: true
 ---
-윈도우에 ubuntu를 설치할 수 있으면서(비록 개발자 모드에서만 가능하지만) bash도 실행할 수 있다.
-본 실습에서는 Windows에서 Ubuntu on Windows의 bash로 shell scripy를 실행해본다.
+윈도우 10부터는 ubuntu를 설치할 수 있으면서(비록 개발자 모드에서만 가능하지만) bash도 실행할 수 있다.
+본 실습에서는 Windows에서 Windows Subsystem for Linux로 shell scripy를 실행해본다.
 
 ### rvm 설치
 
@@ -17,7 +17,7 @@ stable 버전의 rvm을 설치한다.
 curl 앞에 backslach가 있는데, 빼먹지 않도록 주의한다. 버전 충돌을 막아준다.
 
 ```
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$ \curl -L https://get.rvm.io | bash -s stable --ruby
+luvix@WSL:/mnt/c/Users/luvix$ \curl -L https://get.rvm.io | bash -s stable --ruby
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   194  100   194    0     0    179      0  0:00:01  0:00:01 --:--:--   179
@@ -75,7 +75,7 @@ Creating alias default for ruby-2.4.0...
 
   * To start using RVM you need to run `source /home/luvix/.rvm/scripts/rvm`
     in all your open shell windows, in rare cases you need to reopen all shell windows.
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$
+luvix@WSL:/mnt/c/Users/luvix$
 ```
 
 ### rvm 적용
@@ -83,55 +83,54 @@ luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 rvm을 bash에 등록시킨다. 등록하지 않으면 rvm 명령을 실행할 수 없다.
 
 ```
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$ rvm install ruby-2.4.1
+luvix@WSL:/mnt/c/Users/luvix$ rvm install ruby-2.4.1
 'rvm' 명령은 찾을 수 없지만 비슷한  '20' 명령이 있습니다.
 rvm: 명령을 찾을 수 없습니다
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$ source /home/luvix/.rvm/scripts/rvm
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$
+luvix@WSL:/mnt/c/Users/luvix$ source /home/luvix/.rvm/scripts/rvm
+luvix@WSL:/mnt/c/Users/luvix$
 ```
 
 ### ruby 2.4.1 설치
 
 버전명을 주의한다.
 
-```
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$ rvm install ruby-2.4.1
-Searching for binary rubies, this might take some time.
-Found remote file https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.4.1.tar.bz2
-Checking requirements for ubuntu.
-Requirements installation successful.
-ruby-2.4.1 - #configure
-ruby-2.4.1 - #download
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
-100 14.1M  100 14.1M    0     0   227k      0  0:01:03  0:01:03 --:--:--  327k
-No checksum for downloaded archive, recording checksum in user configuration.
-ruby-2.4.1 - #validate archive
-ruby-2.4.1 - #extract
-ruby-2.4.1 - #validate binary
-ruby-2.4.1 - #setup
-ruby-2.4.1 - #gemset created /home/luvix/.rvm/gems/ruby-2.4.1@global
-ruby-2.4.1 - #importing gemset /home/luvix/.rvm/gemsets/global.gems...................................
-ruby-2.4.1 - #generating global wrappers........
-ruby-2.4.1 - #gemset created /home/luvix/.rvm/gems/ruby-2.4.1
-ruby-2.4.1 - #importing gemsetfile /home/luvix/.rvm/gemsets/default.gems evaluated to empty gem list
-ruby-2.4.1 - #generating default wrappers........
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$
-```
+
+    luvix@WSL:/mnt/c/Users/luvix$ rvm install ruby-2.4.1
+    Searching for binary rubies, this might take some time.
+    Found remote file https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.4.1.tar.bz2
+    Checking requirements for ubuntu.
+    Requirements installation successful.
+    ruby-2.4.1 - #configure
+    ruby-2.4.1 - #download
+    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                    Dload  Upload   Total   Spent    Left  Speed
+    0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+    100 14.1M  100 14.1M    0     0   227k      0  0:01:03  0:01:03 --:--:--  327k
+    No checksum for downloaded archive, recording checksum in user configuration.
+    ruby-2.4.1 - #validate archive
+    ruby-2.4.1 - #extract
+    ruby-2.4.1 - #validate binary
+    ruby-2.4.1 - #setup
+    ruby-2.4.1 - #gemset created /home/luvix/.rvm/gems/ruby-2.4.1@global
+    ruby-2.4.1 - #importing gemset /home/luvix/.rvm/gemsets/global.gems...................................
+    ruby-2.4.1 - #generating global wrappers........
+    ruby-2.4.1 - #gemset created /home/luvix/.rvm/gems/ruby-2.4.1
+    ruby-2.4.1 - #importing gemsetfile /home/luvix/.rvm/gemsets/default.gems evaluated to empty gem list
+    ruby-2.4.1 - #generating default wrappers........
+    luvix@WSL:/mnt/c/Users/luvix$
+
 
 ### default ruby를 2.4.1로 변경
 
 ```
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$ rvm --default use ruby-2.4.1
+luvix@WSL:/mnt/c/Users/luvix$ rvm --default use ruby-2.4.1
 Using /home/luvix/.rvm/gems/ruby-2.4.1
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$
+luvix@WSL:/mnt/c/Users/luvix$
 ```
 
 ### Jekyll 설치
 
-
-    luvix@Bash-On-Windows:/mnt/c/Users/luvix$ gem install jekyll
+    luvix@WSL:/mnt/c/Users/luvix$ gem install jekyll
     Fetching: public_suffix-2.0.5.gem (100%)
     Successfully installed public_suffix-2.0.5
     Fetching: addressable-2.5.0.gem (100%)
@@ -208,7 +207,7 @@ luvix@Bash-On-Windows:/mnt/c/Users/luvix$
     Installing ri documentation for jekyll-3.4.3
     Done installing documentation for public_suffix, addressable, colorator, sass, jekyll-sass-converter, rb-fsevent, ffi, rb-inotify, listen, jekyll-watch, kramdown, liquid, mercenary, forwardable-extended, pathutil, rouge, safe_yaml, jekyll after 34 seconds
     18 gems installed
-    luvix@Bash-On-Windows:/mnt/c/Users/luvix$
+    luvix@WSL:/mnt/c/Users/luvix$
 
 
 ### bundler 및 bundle 설치
@@ -216,7 +215,7 @@ luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 bundle을 설치할 때 bundler도 같이 설치된다.
 
 ```
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$ gem install bundle
+luvix@WSL:/mnt/c/Users/luvix$ gem install bundle
 Fetching: bundler-1.14.6.gem (100%)
 Successfully installed bundler-1.14.6
 Fetching: bundle-0.0.1.gem (100%)
@@ -227,7 +226,7 @@ Parsing documentation for bundle-0.0.1
 Installing ri documentation for bundle-0.0.1
 Done installing documentation for bundler, bundle after 8 seconds
 2 gems installed
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$
+luvix@WSL:/mnt/c/Users/luvix$
 ```
 
 ## Jekyll 프로젝트 설정
@@ -235,14 +234,14 @@ luvix@Bash-On-Windows:/mnt/c/Users/luvix$
 먼저 jekyll 프로젝트가 있는 디렉토리로 이동한다.
 
 ```
-luvix@Bash-On-Windows:/mnt/c/Users/luvix$ cd /mnt/c/luvix.github.io/
-luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
+luvix@WSL:/mnt/c/Users/luvix$ cd /mnt/c/luvix.github.io/
+luvix@WSL:/mnt/c/luvix.github.io$
 ```
 
 ### Jekyll 프로젝트에 bundle설치
 
 ```
-luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle install
+luvix@WSL:/mnt/c/luvix.github.io$ bundle install
 
 [!] There was an error parsing `Gemfile`:
 [!] There was an error while loading `forty_jekyll_theme.gemspec`: No such file or directory - git. Bundler cannot continue.
@@ -260,7 +259,7 @@ luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle install
  #  source "https://rubygems.org"
  >  gemspec
  #  -------------------------------------------
- luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
+ luvix@WSL:/mnt/c/luvix.github.io$
 ```
 
 **주의!** git이 설치되어 있지 않다면 Git를 설치한다.
@@ -270,8 +269,8 @@ bundle이 Git 설정을 읽어야하기 때문이다.
 ### Git 설치
 
 
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ sudo apt-get install git
-    sudo: unable to resolve host Bash-On-Windows
+    luvix@WSL:/mnt/c/luvix.github.io$ sudo apt-get install git
+    sudo: unable to resolve host WSL
     [sudo] password for luvix:
     패키지 목록을 읽는 중입니다... 완료0%
     의존성 트리를 만드는 중입니다
@@ -308,13 +307,13 @@ bundle이 Git 설정을 읽어야하기 때문이다.
     liberror-perl (0.17-1.1) 설정하는 중입니다 ...
     git-man (1:1.9.1-1ubuntu0.4) 설정하는 중입니다 ...
     git (1:1.9.1-1ubuntu0.4) 설정하는 중입니다 ...
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
+    luvix@WSL:/mnt/c/luvix.github.io$
 
 
 ### 다시 Jekyll 프로젝트에 bundle설치
 
 
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle install
+    luvix@WSL:/mnt/c/luvix.github.io$ bundle install
     Fetching gem metadata from https://rubygems.org/...........
     Fetching version metadata from https://rubygems.org/..
     Fetching dependency metadata from https://rubygems.org/.
@@ -340,12 +339,12 @@ bundle이 Git 설정을 읽어야하기 때문이다.
     Installing jekyll 3.4.2
     Bundle complete! 3 Gemfile dependencies, 20 gems now installed.
     Use `bundle show [gemname]` to see where a bundled gem is installed.
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
+    luvix@WSL:/mnt/c/luvix.github.io$
 
 
 ### Jekyll 테스트
 
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle exec jekyll serve --detach
+    luvix@WSL:/mnt/c/luvix.github.io$ bundle exec jekyll serve --detach
     Configuration file: /mnt/c/luvix.github.io/_config.yml
     Configuration file: /mnt/c/luvix.github.io/_config.yml
                 Source: /mnt/c/luvix.github.io
@@ -357,7 +356,7 @@ bundle이 Git 설정을 읽어야하기 때문이다.
     Configuration file: /mnt/c/luvix.github.io/_config.yml
         Server address: http://127.0.0.1:4000/
     Server detached with pid '9422'. Run `pkill -f jekyll' or `kill -9 9422' to stop the server.
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
+    luvix@WSL:/mnt/c/luvix.github.io$
 
 이로써 localhost에 포트 4000으로 jekyll에 접속할 수 있게되었다.
 
@@ -368,7 +367,7 @@ Bash on Windows의 버전이 낮을 경우 reload가 불가능할 수 있다.
 또한 Jekyll이 git 관련 에러를 출력하지만, 재실행에는 문제가 없다.
 
 
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ jekyll serve --watch
+    luvix@WSL:/mnt/c/luvix.github.io$ jekyll serve --watch
     Configuration file: /mnt/c/luvix.github.io/_config.yml
     Configuration file: /mnt/c/luvix.github.io/_config.yml
                 Source: /mnt/c/luvix.github.io
@@ -380,15 +379,15 @@ Bash on Windows의 버전이 낮을 경우 reload가 불가능할 수 있다.
                         Please see: https://github.com/Microsoft/BashOnWindows/issues/216
                         If it does not work, please upgrade Bash on Windows or run Jekyll with --no-watch.
     jekyll 3.4.2 | Error:  Invalid argument - Failed to watch "/mnt/c/luvix.github.io/.git/hooks": the given event mask contains no legal events; or fd is not an inotify file descriptor.
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$
+    luvix@WSL:/mnt/c/luvix.github.io$
 
 
 ## 내일 다시 시작하기
 
 다시 시작할 때는 source 명령어로 rvm을 불러온 후 bundle과 jekyll 을 차례대로 실행하면 된다.
 
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ source /home/luvix/.rvm/scripts/rvm
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ bundle exec jekyll serve --detach
+    luvix@WSL:/mnt/c/luvix.github.io$ source /home/luvix/.rvm/scripts/rvm
+    luvix@WSL:/mnt/c/luvix.github.io$ bundle exec jekyll serve --detach
     Configuration file: /mnt/d/Documents/Codeworks/luvix/luvix.github.io/_config.yml
     Configuration file: /mnt/d/Documents/Codeworks/luvix/luvix.github.io/_config.yml
                 Source: /mnt/d/Documents/Codeworks/luvix/luvix.github.io
@@ -400,7 +399,7 @@ Bash on Windows의 버전이 낮을 경우 reload가 불가능할 수 있다.
     Configuration file: /mnt/d/Documents/Codeworks/luvix/luvix.github.io/_config.yml
         Server address: http://127.0.0.1:4000/
     Server detached with pid '99'. Run `pkill -f jekyll' or `kill -9 99' to stop the server.
-    luvix@Bash-On-Windows:/mnt/c/luvix.github.io$ [2017-03-31 22:42:48] ERROR `/favicon.ico' not found.
+    luvix@WSL:/mnt/c/luvix.github.io$ [2017-03-31 22:42:48] ERROR `/favicon.ico' not found.
 
 
 ## 정리
