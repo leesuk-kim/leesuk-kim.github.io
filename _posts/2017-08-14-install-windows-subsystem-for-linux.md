@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Install Bash-on-Windows
-description: bash on Windows(WSL)을 설치해본다.
+title: Install Windows Subsystem for Linux
+description: Windows Subsystem for Linux(WSL)을 설치해본다.
+image: 'https://user-images.githubusercontent.com/16158188/50377031-6356ce00-0659-11e9-823e-f9d07e9de280.jpg'
 category: "Development Environment"
 tags: [bash-on-windows, ssh, shell]
 comments: true
