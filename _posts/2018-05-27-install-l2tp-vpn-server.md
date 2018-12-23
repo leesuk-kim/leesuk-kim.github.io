@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to setup VPN server with L2TP using SoftEtherVPN and login on Windows 10
-description: SoftEtherVPN으로 L2TP VPN 서버를 구성하는 법과 Windows 10에서 로그인하는 방법
+title:  L2TP VPN server 만들기
+description: SoftEtherVPN를 활용해서 간편하게 L2TP VPN 서버를 구축한다.
 category: "linux"
-tags: [linux, vpn, softether, l2tp, win10]
+tags: [linux, vpnserver, softethervpn, l2tp]
 comments: true
 ---
 
@@ -421,23 +421,6 @@ VPN Server/VPN>
 ```
 
 참고로, 위의 코드를 보면 눈치챘겠지만, 이 설정은 Hub로 들어가지 않아도 된다.
-
-## Windows 10 에서 VPN 접속
-
-'설정'-'네트워크'-'VPN'으로 접근한다.
-'VPN 연결 추가'를 선택한다.
-
-![win10vpn](/postres/180527/win10vpn.jpg)
-
-이름을 적당히 입력한다.
-서버 주소(대게 IP)와 사전 공유 키를 입력한다.
-그리고 서버에서 설정한 아이디와 비밀번호를 입력한다.
-
-![vpnprofile](/postres/180527/vpnprofile.jpg)
-
-그리고 접속한다.
-
-![vpnlogin](/postres/180527/vpnlogin.jpg)
 
 ## References
 

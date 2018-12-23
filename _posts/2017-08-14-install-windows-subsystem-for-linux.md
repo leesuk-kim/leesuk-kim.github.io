@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Install Windows Subsystem for Linux
-description: Windows Subsystem for Linux(WSL)을 설치해본다.
+title: Install winbash
+description: winbash를 설치해본다.
 image: 'https://user-images.githubusercontent.com/16158188/50377031-6356ce00-0659-11e9-823e-f9d07e9de280.jpg'
 category: "Development Environment"
-tags: [bash-on-windows, ssh, shell]
+tags: [winbash, ssh, shell]
 comments: true
 ---
 ## bash-on-windows 설치
@@ -35,7 +35,7 @@ WSL(Windows Subsystem for Linux, 한글명 'Linux용 Windows 하위 시스템')�
 
 선택하고 '확인'을 누르면 곧 설치가 완료됩니다. 그리 오래걸리진 않습니다. 바로 재부팅합니다.
 
-### Bash-on-Windows 설치
+### winbash 설치
 
 재부팅이 끝나면 bash를 실행해보겠습니다. 먼저 `win+x`를 누르거나 '시작'메뉴에 커서를 대고 우클릭해서 '명령 프롬프트', 또는 '시작'-'Windows 프로그램'-'명령 프롬프트'를 실행합니다. 다 명령 프롬프트를 실행하는 방법입니다.
 
@@ -45,7 +45,7 @@ WSL(Windows Subsystem for Linux, 한글명 'Linux용 Windows 하위 시스템')�
 
 설치 과정에서 총 5번의 질문을 받습니다. 아래의 빨간 동그라미가 그 입력 위치입니다.
 
-![install bash](/postres/170814/ws4l-09-1.jpg)
+![install winbash](/postres/170814/ws4l-09-1.jpg)
 
 각 질문은 다음을 의미합니다.
 
@@ -67,7 +67,7 @@ WSL(Windows Subsystem for Linux, 한글명 'Linux용 Windows 하위 시스템')�
 여기까지 끝낸다면 설치는 완료입니다.
 마지막으로 `sudo apt -y upgrade` 와 `sudo apt-get -y upgrade`를 입력하여 시스템을 최신상태로 업데이트합니다.
 
-이제는 명령 프롬프트창에서 `bash`를 입력하면 WSL의 bash로 접속하실 수 있습니다. 또한 '시작'에서도 bash for windows 를 확인할 수 있습니다.
+이제는 명령 프롬프트창에서 `bash`를 입력하면 winbash로 접속하실 수 있습니다. 또한 '시작'에서도 bash for windows 를 확인할 수 있습니다.
 
 ![Bash on ubuntu on Windows](/postres/170814/ws4l-10.jpg)
 
@@ -78,7 +78,7 @@ WSL(Windows Subsystem for Linux, 한글명 'Linux용 Windows 하위 시스템')�
 반드시 `bash`명령어를 써야 하고, 다른 프로그램들이 기본적으로 지원은 커녕 이걸 이용해서 사용하는 방법도 지원 안하는 경우가 대부분이므로
 *ubuntu* 환경에서 구동시켜야하는 서버나 테스트 프로그램 정도나 실행해볼만 합니다.
 
-또한 마지막 bash 창이 꺼질 때 WSL도 함께 종료되므로 주의하시기 바랍니다.
+또한 마지막 bash 창이 꺼질 때 winbash도 함께 종료되므로 주의하시기 바랍니다.
 
 ## Windows에서 `bash`로 *Shell script* 실행
 
