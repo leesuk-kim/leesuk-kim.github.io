@@ -32,20 +32,20 @@ L2TP VPN server로 접속하기 위해 레지스트리를 수정합니다.
 이제 키를 추가합니다.
 키 종류는 _DWARD(32비트)값_ 입니다.
 
-![](/postres/181223/edit-item-name.jpg)
+![키 이름 변경](/postres/181223/edit-item-name.jpg)
 
 키를 추가하면 바로 아래에 _새 값 #1_ 이라고 생성됩니다.
 이 상태에서 키 이름 **AssumeUDPEncapsulationContextOnSendRule** 을 입력합니다.
 
-![](/postres/181223/submit-new-key.jpg)
+![키 값 변경을 위한 우클릭](/postres/181223/submit-new-key.jpg)
 
 엔터를 누르거나 빈 화면을 클릭하면 저장됩니다.
 입력한 키를 우클릭해서 보조메뉴를 연 후 _수정_ 을 클릭합니다.
 
-![](/postres/181223/edit-key-value.jpg)
+![키 값 변경](/postres/181223/edit-key-value.jpg)
 
 여기에서 데이터를 변경합니다. 데이터는 **2** 입니다.
 
-![](/postres/181223/finish.jpg)
+![끝](/postres/181223/finish.jpg)
 
 이제 재부팅하면 로그인할 수 있습니다.
