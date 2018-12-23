@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remove image background with krita
+title: Krita로 누끼따기
 description: 크리타로 선을 따본다. 크리타로 누끼를 따본다.
 image: 'https://user-images.githubusercontent.com/16158188/50384953-0407c500-0710-11e9-9c7b-0102d0533e72.jpg'
 category: how to
