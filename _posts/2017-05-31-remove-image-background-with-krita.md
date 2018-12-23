@@ -2,7 +2,7 @@
 layout: post
 title: Remove image background with krita
 description: 크리타로 선을 따본다. 크리타로 누끼를 따본다.
-categories: how to
+category: how to
 tags: [krita, 누끼]
 comments: true
 ---

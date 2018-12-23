@@ -2,7 +2,7 @@
 layout: post
 title: "Send a letter to 3rd generation society"
 description: "3차 사회 혁명에 보내는 편지: 꼰대의 멸종"
-categories: eaasy
+category: essay
 tags: [philosophy, modern-life, 3rd-generation]
 comments: true
 ---
