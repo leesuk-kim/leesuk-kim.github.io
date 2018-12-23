@@ -2,7 +2,7 @@
 layout: post
 title:  L2TP VPN server 만들기
 description: SoftEtherVPN를 활용해서 간편하게 L2TP VPN 서버를 구축한다.
-category: "linux"
+category: how to
 tags: [linux, VPN Server, SoftetherVPN, L2TP]
 comments: true
 ---

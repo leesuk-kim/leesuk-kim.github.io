@@ -3,8 +3,8 @@ layout: post
 title: Install winbash
 description: winbash를 설치해본다.
 image: 'https://user-images.githubusercontent.com/16158188/50377031-6356ce00-0659-11e9-823e-f9d07e9de280.jpg'
-category: "Development Environment"
-tags: [winbash, ssh, shell]
+category: how to
+tags: [win10, winbash, ssh, shell]
 comments: true
 ---
 ## bash-on-windows 설치

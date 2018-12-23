@@ -2,8 +2,8 @@
 layout: post
 title: Ubuntu용 python 3.6 설치 스크립트
 description: Ubunty 운영체제에서 파이썬 3.6.1을 설치할 때 필요한 명령어들을 정리하였다.
-category: "Python3"
-tags: [snippet, py3, ubuntu]
+category: how to
+tags: [snippet, python3, ubuntu]
 comments: true
 ---
 

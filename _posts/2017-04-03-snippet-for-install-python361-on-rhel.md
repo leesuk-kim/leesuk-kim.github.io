@@ -2,8 +2,8 @@
 layout: post
 title: RHEL용 python 3.6 설치 스크립트
 description: RHEL 운영체제에서 파이썬 3.6.1을 설치할 때 필요한 명령어들을 정리하였다.
-category: "Python"
-tags: [snippet, py3, RHEL]
+category: how to
+tags: [snippet, python3, RHEL]
 comments: true
 ---
 

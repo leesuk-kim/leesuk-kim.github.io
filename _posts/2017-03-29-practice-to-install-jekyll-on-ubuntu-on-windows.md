@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Practice to install Jekyll on bash on Windows
-description: bash on Windows 에 Jekyll을 설치해본다.
+title: winbash에 Jekyll 설치
+description: winbash 에 Jekyll을 설치해본다.
 image: 'https://user-images.githubusercontent.com/16158188/50376968-90ef4780-0658-11e9-9bd1-32143dfddd90.jpg'
-category: "Development Environment"
-tags: [SSH, winbash]
+category: how to
+tags: [jekyll, SSH, winbash]
 comments: true
 ---
 bash on Windows에 Jekyll을 설치해보았다.

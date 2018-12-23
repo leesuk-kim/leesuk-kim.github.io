@@ -2,7 +2,7 @@
 layout: post
 title: "VS Code: change fontsize"
 description: VS code의 메뉴와 편집기의 글자크기를 수정한다.
-category: "VS code"
+category: how to
 tags: [vscode]
 comments: true
 ---

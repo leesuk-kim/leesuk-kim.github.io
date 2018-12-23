@@ -2,8 +2,8 @@
 layout: post
 title: Practice to as operator
 description: as 연산자를 예제로 이해한다.
-category: "c#"
-tags: [csharp]
+category: how to
+tags: [c#]
 comments: true
 ---
 
