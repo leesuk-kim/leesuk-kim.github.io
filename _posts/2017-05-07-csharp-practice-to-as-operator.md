@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Practice to as operator
+title: as operator 예제
 description: as 연산자를 예제로 이해한다.
 category: how to
 tags: [c#]
