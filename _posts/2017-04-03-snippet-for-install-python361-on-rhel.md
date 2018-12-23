@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Snippet for installing for install python3.6.1 on RHEL in aws ec2
+title: RHEL용 python 3.6 설치 스크립트
 description: RHEL 운영체제에서 파이썬 3.6.1을 설치할 때 필요한 명령어들을 정리하였다.
-category: "Development Environment"
-tags: [python, aws-ec2, rhel]
+category: "snippet"
+tags: [snippet, py3, RHEL]
 comments: true
 ---
 
-파이썬 3.6.1을 설치하는 명령어를 정리하였다.
-AWS에서 실습을 진행하였으며, Amazon Linux x64 환경이다. RHEL(Centos, Redhat)과 대응된다.
-다른 버전도 버전 번호만 바꾸면 동일하다.
+python 3.6.1을 설치하는 명령어를 정리하였다.
+AWS에서 실습을 진행하였으며, Amazon Linux x64 환경이다. RHEL(Centos, Redhat)에 대응한다.
+다른 버전도 python 버전 번호만 바꾸면 동일하다.
 
 ## Commands
 
