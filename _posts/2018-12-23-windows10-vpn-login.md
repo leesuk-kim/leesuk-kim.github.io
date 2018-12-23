@@ -3,7 +3,7 @@ layout: post
 title:  L2TP VPN 접속하기
 description: 윈도우 10 기본 vpn 클라이언트로 VPN 서버에 접속한다.
 category: "win10"
-tags: [win10, vpn, l2tp]
+tags: [win10, VPN, L2TP]
 comments: true
 ---
 
