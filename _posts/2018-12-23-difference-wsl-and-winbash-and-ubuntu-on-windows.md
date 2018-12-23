@@ -42,6 +42,7 @@ WSL을 활성화했다면, 윈도우 스토어에서 Ubuntu 나 OpneSUSE 등을 
 그러므로 Bash on Ubuntu on Windows가 있다면 Bash on OpenSUSE on Windows 도 있습니다.
 winbash와 다른점이 있다면 추가로 설치해야 하고, 거의 모든 기능을 사용할 수 있습니다.
 가상머신으로 돌리는 Ubuntu와 다르게 작동하지 않는 패키지(예: Docker) 도 있어서 Winbuntu 라고도 부릅니다.
+Ubuntu 이외에도 윈도우 스토어를 찾아보면 여러 운영체제를 선택할 수 있으니 찾아서 필요한 운영체제를 활용하시기 바랍니다.
 
 ![Windows Store search: linux](/postres/181223/winstore-linux.jpg)
 
