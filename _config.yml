@@ -15,9 +15,6 @@ user_description: 나무하듯 뉴스해오는 뉴스꾼
 # Remove the item if you don't need it
 github_username: luvix
 twitter_username: LuvixBasso
-# facebook_username: 
-# instagram_username: 
-# medium_username: medium_username
 
 # Build settings
 markdown: kramdown
