@@ -2,7 +2,7 @@
 layout: post
 title: as operator 예제
 description: as 연산자를 예제로 이해한다.
-image: 'https://user-images.githubusercontent.com/16158188/50389098-a6ec2d80-0768-11e9-9f0b-04d74b609f52.jpg'
+image: 'https://user-images.githubusercontent.com/16158188/50389133-45788e80-0769-11e9-8b56-e3461f5db755.jpg'
 category: how to
 tags: [c#]
 comments: true
