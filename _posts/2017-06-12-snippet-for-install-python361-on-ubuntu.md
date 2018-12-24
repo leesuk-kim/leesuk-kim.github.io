@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu용 python 3.6 설치 스크립트
-description: Ubunty 운영체제에서 파이썬 3.6.1을 설치할 때 필요한 명령어들을 정리하였다.
+description: Ubuntu 운영체제에서 파이썬 3.6.1을 설치할 때 필요한 명령어들을 정리하였다.
 category: how to
 tags: [snippet, python3, ubuntu]
 comments: true
@@ -15,7 +15,7 @@ AWS에서 실습을 진행하였으며, Ubuntu 16.04 LTS x64 환경이다.
 
 ``` cmd
 sudo apt install build-essential checkinstall openssl
-sudo apt-get install -ylibreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+sudo apt-get install -y libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
 tar xvf Python-3.6.1.tar.xz
 cd Python-3.6.1
