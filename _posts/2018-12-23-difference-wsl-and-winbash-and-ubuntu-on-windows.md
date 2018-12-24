@@ -2,6 +2,7 @@
 layout: post
 title: WSL, winbash, winbuntu 차이점
 description: windows 10부터 지원하는 linux 환경의 차이를 살펴본다.
+image: 'https://user-images.githubusercontent.com/16158188/50405709-1f4ffe80-07fc-11e9-9eed-806ff7da1753.jpg'
 category: news
 tags: [win10, winbash, winbuntu, WSL]
 comments: true
