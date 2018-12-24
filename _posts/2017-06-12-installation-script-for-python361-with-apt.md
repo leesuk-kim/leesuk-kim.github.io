@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Ubuntu용 python 3.6 설치 스크립트
+title: apt를 쓰는 python 3.6 설치 스크립트
 description: Ubuntu 운영체제에서 파이썬 3.6.1을 설치할 때 필요한 명령어들을 정리하였다.
+image: 'https://user-images.githubusercontent.com/16158188/50405566-0f371f80-07fa-11e9-8c91-996cbaf8fe18.jpg'
 category: how to
 tags: [snippet, python3, ubuntu]
 comments: true
@@ -40,6 +41,24 @@ python3.6 -V
 - 이 방법을 통해 설치한 python의 경로는 `/home/ubuntu/.local/bin`(줄여서 쓰면 `~/.local/bin`)이다.
 이 경로는 '~/.profile'에 이미 등록되어 있으므로 source를 사용하여 다시 로드해주기만 하면 된다.
 참고로 aws용 ubuntu는 bash가 `~/.profile`이지만 일반적으로는 `~/.bash_profile`이다.
+
+## Script
+
+다음 명령어를 그대로 복사해서 붙여넣어도 된다.
+
+### sudo 권한이 없는 계정
+
+```
+curl -s https://raw.githubusercontent.com/luvix/snippet/master/py3/install-py3-apt.sh | bash
+```
+
+스크립트 다운로드가 끝나면 sudo 비밀번호를 물어본다.
+
+### sudo 권한이 있는 계정
+
+```
+curl -s https://raw.githubusercontent.com/luvix/snippet/master/py3/install-py3-apt-sudoer.sh | bash
+```
 
 ## References
 
