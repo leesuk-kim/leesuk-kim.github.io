@@ -2,7 +2,7 @@
 layout: post
 title: Love Mechanism
 description: 믿음직함을 직면하는 나의 마음가짐.
-category: essay
+category: ideas
 tags: [philosophy, eros, logos]
 comments: true
 ---

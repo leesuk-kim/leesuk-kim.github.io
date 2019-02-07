@@ -2,10 +2,10 @@
 layout: post
 title: yum을 쓰는 python 3.6 설치 스크립트
 description: RHEL 운영체제에서 파이썬 3.6.1을 설치할 때 필요한 명령어들을 정리하였다.
-image: 'https://user-images.githubusercontent.com/16158188/50405559-00e90380-07fa-11e9-8154-3e372afe6156.jpg'
-category: how to
+category: recipes
 tags: [snippet, python3, RHEL]
 comments: true
+image: 'https://user-images.githubusercontent.com/16158188/50405559-00e90380-07fa-11e9-8154-3e372afe6156.jpg'
 ---
 
 python 3.6.1을 설치하는 명령어를 정리하였다.

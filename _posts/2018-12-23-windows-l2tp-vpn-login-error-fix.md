@@ -2,7 +2,7 @@
 layout: post
 title: Windows 10 L2TP VPN 로그인 실패 대응
 description: Windows에서 L2TP 프로토콜로 VPN 서버에 로그인할 수 없을 때 레지스트리를 수정하여 로그인한다.
-category: how to
+category: tips
 tags: [win10, VPN, L2TP]
 comments: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: winbash로 jekyll 실행하기
 description: Windows에서 Windows Subsystem for Linux로 shell script를 실행한다.
-category: how to
+category: recipes
 tags: [win10, winbash, ruby, jekyll]
 comments: true
 ---
