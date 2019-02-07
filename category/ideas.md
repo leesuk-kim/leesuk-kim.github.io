@@ -1,4 +1,4 @@
 ---
 layout: category
-category: how to
+category: ideas
 ---
