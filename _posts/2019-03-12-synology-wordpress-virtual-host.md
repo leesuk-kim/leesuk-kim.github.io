@@ -27,6 +27,7 @@ define('RELOCATE',true);
 ## 가상호스트 설정
 
 설정을 끝내면 시놀로지 웹으로 접속햇 **Web Station**을 실행합니다. 그리고 **가상호스트**를 선택해 메뉴로 들어갑니다. 그리고 추가를 눌러 다음과 같이 입력합니다.
+이 때 `HTTP 백엔드 서버`는 반드시 Apache 2.2로 합니다. Nginx 는 안 되더군요. php 는 적당히 골라주세요.
 
 ![vpnlogin](/postres/190312/press.scrawl.org1.jpg)
 
