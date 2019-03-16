@@ -35,5 +35,5 @@ define('RELOCATE',true);
 
 ## Reference
 
-- https://codex.wordpress.org/ko:%EC%82%AC%EC%9D%B4%ED%8A%B8_URL_%EB%B3%80%EA%B2%BD_%EB%B0%A9%EB%B2%95
-- https://www.thewordcracker.com/basic/how-to-solve-problems-after-changing-the-site-url-in-wordpress/
+- [codeX: 사이트 URL 변경 방법(KR)](https://codex.wordpress.org/ko:%EC%82%AC%EC%9D%B4%ED%8A%B8_URL_%EB%B3%80%EA%B2%BD_%EB%B0%A9%EB%B2%95)
+- [워드프레스 주소 변경으로 사이트에 접속하지 못하는 문제 해결](https://www.thewordcracker.com/basic/how-to-solve-problems-after-changing-the-site-url-in-wordpress/)
