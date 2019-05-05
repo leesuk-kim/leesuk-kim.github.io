@@ -101,7 +101,7 @@ C언어를 위협할 진짜 언어라고 생각합니다.
 
 관리가 필요하다는 생각은 예전부터 많이 했습니다.
 Todoist, Trello, Asana, Google keep, Google Tasks, Taiga, Odoo, Wrike, Jira, Wunderist 등을 써봤습니다.
-현재 Todoist와 Asana를 주력으로 쓰고 있지만 언제 바뀔지는 모릅니다.
+현재 TickTick과 Asana를 주력으로 쓰고 있지만 언제 바뀔지는 모릅니다.
 틈틈히 관심을 가지고 있습니다.
 
 ### OAC (Office Assistant Cloud)
